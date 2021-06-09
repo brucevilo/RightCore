@@ -1,0 +1,126 @@
+.l-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__container {
+        max-width: 1180px;
+        padding: 40px 40px 61px 20px;
+        margin: 0 auto;
+        @media screen and (max-width: $bp-sp) {
+            padding: 30px 40px 51px 20px;
+        }
+        @media screen and (max-width: $bp-md) {
+            padding: 5vw 6.667vw 8.5vw 3.333vw;
+        }
+    }
+    &__telephone {
+        background-color: #0ba29a;
+        .telephone-content {
+            min-height: 164px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #000;
+            background-color: #0ba29a;
+            box-shadow: 17px 17px #fde232, 17px 17px 0px 3px #000;
+            @media screen and (max-width: $bp-sp) {
+                min-height: 152px;
+                box-shadow: 21px 18px #fde232, 21px 18px 0px 3px #000;
+            }
+            @media screen and (max-width: $bp-md) {
+                box-shadow: 3.5vw 3vw #fde232, 3.5vw 3vw 0px 0.5vw #000;
+                min-height: 25.333vw;
+            }
+            .tel {
+                font-family: $ff-WoodchuckB;
+                font-size: 56px;
+                text-shadow: 5px 3px 0 #000, -2px -2px 0 #000, 1.5px -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+                color: #fde232;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+                margin-top: 4px;
+                margin: 4px 0 10px 0;
+                @media screen and (max-width: $bp-sp) {
+                    font-size: 7.5vw;
+                }
+                @media screen and (max-width: $bp-md) {
+                    text-shadow: 0.833vw 0.5vw 0 #000, -0.333vw -0.333vw 0 #000, 0.250vw -0.333vw 0 #000, 0 0.333vw 0 #000, -0.333vw 0 0 #000;
+                }
+            }
+            .off-hrs {
+                font-family: $ff-YuGothic;
+                font-weight: 700;
+                font-size: 14px;
+                color: #191919;
+                margin-bottom: 8px;
+                @media screen and (max-width: $bp-sp) {
+                    font-size: 2.75vw;
+                }
+            }
+        }
+    }
+    &__map {
+        position: relative;
+        height: 260px;
+        @media screen and (max-width: $bp-sp) {
+            height: 500px;
+        }
+        @media screen and (max-width: $bp-md) {
+            height: 83.333vw;
+        }
+        .page-top {
+            position: fixed;
+            right: 40px;
+            bottom: 47px;
+            z-index: 10;
+            cursor: pointer;
+            @media screen and (max-width: $bp-sp) {
+                right: 16px;
+                bottom: 35px;
+                width: 17.8vw;
+            }
+        }
+    }
+    &__bottom {
+        height: 51px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fde232;
+        padding: 0 198px;
+        @media screen and (max-width: $bp-sp) {
+            height: 55px;
+            padding: 0 15px;
+        }
+        @media screen and (max-width: $bp-md) {
+            height: 9.167vw;
+        }
+        .privacy {
+            a {
+                color: #191919;
+                font-family: $ff-YuGothic;
+                font-weight: 500;
+                font-size: 12px;
+                @media screen and (max-width: $bp-sp) {
+                    font-size: 18px;
+                }
+                @media screen and (max-width: $bp-md) {
+                    font-size: 3vw;
+                }
+            }
+        }
+        .copy-right {
+            color: #191919;
+            font-family: $ff-YuGothic;
+            font-weight: 500;
+            font-size: 12px;
+            @media screen and (max-width: $bp-sp) {
+                font-size: 18px;
+            }
+            @media screen and (max-width: $bp-md) {
+                font-size: 3vw;
+            }
+        }
+    }
+}

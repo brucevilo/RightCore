@@ -1,0 +1,30 @@
+.d-sp-bl,
+.d-sp-ib,
+.d-tabpc-bl,
+.d-tabpc-ib {
+    display: none;
+}
+
+@media screen and (max-width: $bp-tabpc) {
+    .d-tabpc-bl {
+        display: block !important;
+    }
+    .d-tabpc-ib {
+        display: inline-block !important;
+    }
+    .d-n-pc {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: $bp-sp) {
+    .d-sp-bl {
+        display: block !important;
+    }
+    .d-sp-ib {
+        display: inline-block !important;
+    }
+    .d-n-sp {
+        display: none !important;
+    }
+}

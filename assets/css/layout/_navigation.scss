@@ -1,0 +1,105 @@
+.nav {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $bp-tabpc) {
+        display: none;
+    }
+    &__links {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 40px;
+
+        a {
+            font-family: $ff-YuGothic;
+            font-weight: 700;
+            font-size: 14px;
+            color: #181818;
+            text-decoration: none;
+            letter-spacing: -0.25px;
+        }
+
+        a:hover {
+            color: #0ba29a;
+        }
+    }
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width: $bp-tabpc) {
+        display: flex;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    .close-burg {
+        display: none;
+        margin-right: 8px;
+    }
+
+    .menu-burg {
+        display: block;
+        margin-right: 8px;
+    }
+
+    #toggle:checked~.close-burg {
+        @media screen and (max-width: $bp-tabpc) {
+            display: block;
+        }
+    }
+
+    #toggle:checked~.menu-burg {
+        @media screen and (max-width: $bp-tabpc) {
+            display: none;
+        }
+    }
+
+    #toggle:checked~.menu {
+        @media screen and (max-width: $bp-tabpc) {
+            display: block !important;
+            position: absolute;
+            right: 0;
+            top: 90px;
+            z-index: 5;
+        }
+    }
+
+    label {
+        @media screen and (max-width: $bp-tabpc) {
+            cursor: pointer;
+            display: block;
+        }
+    }
+
+    .menu {
+        display: none !important;
+        text-align: start;
+        width: 450px;
+        @media screen and (max-width: $bp-sm) {
+            width: 100%;
+        }
+        :last-child {
+            border-bottom: 1px solid #000;
+        }
+
+        a {
+            background-color: #191919;
+            text-decoration: none;
+            border-top: 1px solid #000;
+            display: block;
+            font-family: $ff-YuGothic;
+            font-weight: 700;
+            font-size: 22px;
+            color: #fff;
+            padding-left: 30px;
+            line-height: 68px;
+        }
+    }
+}

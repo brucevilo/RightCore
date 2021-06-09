@@ -1,0 +1,51 @@
+.p-global {
+    display: flex;
+    @media screen and(max-width: $bp-sp) {
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+
+    .description {
+        width: 100%;
+        background-color: #191919;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        z-index: 1;
+
+        &__text {
+            width: 80%;
+            margin: 0 auto;
+            font-family: $ff-YuGothic;
+            font-weight: 500;
+            color: #fde232;
+            font-size: 16px;
+            line-height: 23px;
+            white-space: pre-line;
+
+            @media screen and (max-width:$bp-sp) {
+                padding: 25px 40px 31px;
+                width: 100%;
+                font-size: 24px;
+                line-height: 36px;
+            }
+            @media screen and (max-width:$bp-md) {
+                font-size: 4vw;
+                line-height: 6vw;
+                padding: 4.167vw 6.667vw 5.167vw;
+            }
+        }
+
+        &__image {
+            width: 100%;
+            background-color: #191919;
+            z-index: 1;
+
+            img {
+                width: 100%;
+                border: 3px solid #191919;
+                box-sizing: border-box;
+            }
+        }
+    }
+}

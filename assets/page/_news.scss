@@ -1,0 +1,141 @@
+@import "../css/foundation/variables";
+
+// * {
+//     box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+// }
+
+.n-main {
+    margin: 60px auto;
+    padding: 0 40px;
+
+    @media (max-width:$bp-sp) {
+        padding: 0 15px;
+        margin: 40px auto;
+    }
+
+    &__wrapper {
+        background: #191919;
+        max-width: 1200px;
+        padding: 60px;
+        margin: 0 auto;
+
+        @media (max-width:$bp-sp) {
+            padding: 40px 40px;
+        }
+        @media (max-width:$bp-md) {
+            padding: 6.667vw 6.667vw;
+        }
+    }
+
+    &__link {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px dashed #fff;
+        text-decoration: none;
+        padding: 23.5px 0;
+        @media screen and (max-width: $bp-sp) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 24.2px 0;
+        }
+        @media screen and (max-width: $bp-md) {
+            padding: 4.167vw 0;
+        }
+        &:first-child {
+            border-top: 1px dashed #fff;
+        }
+    }
+
+    &__link:hover {
+        background: #000000;
+    }
+
+    &__link:hover i {
+        color: white;
+    }
+
+    &__date {
+        font-family: $ff-RobotoCondensedB;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fde232;
+        margin-right: 65px;
+        margin-left: 20px;
+        @media screen and (max-width: $bp-sp) {
+            font-size: 24px;
+            margin-bottom: 9px;
+            margin-left: 0;
+        }
+        @media screen and (max-width: $bp-md) {
+            font-size: 4vw;
+        }
+    }
+
+    &__desc {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        h2 {
+            font-family: $ff-YuGothic;
+            font-weight: 500;
+            font-size: 16px;
+            color: #fff;
+            @media screen and (max-width: $bp-sp) {
+                font-size: 24px;
+                line-height: 35px;
+                letter-spacing: 1px;
+            }
+            @media screen and (max-width: $bp-md) {
+                font-size: 4vw;
+                line-height: 5.833vw;
+            }
+            
+        }
+        i {
+            margin-left: auto;
+            color: #fde232;
+            margin-right: 20px;
+            margin-left: 20px;
+            @media screen and (max-width:$bp-sp) {
+                margin-left: 30px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.page-numbers {
+    width: 40px !important;
+    height: 45px !important;
+    line-height: 43px !important;
+    background: #000 !important;
+    color: #fff !important;
+    border: none !important;
+    font-family: $ff-RobotoCondensedR !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+.current {
+    background: #191919 !important;
+    border: 2px solid #000 !important;
+}
+.dots {
+    background: #191919 !important;
+}
+.next,
+.prev {
+    display: none !important;
+}
+
+ul.easy-wp-page-nav li {
+    margin: 0 8px 0 0 !important;
+}
+.easy-wp-page-navigation {
+    margin: 40px 0 0 !important;
+}

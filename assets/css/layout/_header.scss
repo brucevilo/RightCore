@@ -1,0 +1,36 @@
+.l-header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    background-color: #fde232;
+    display: flex;
+    align-items: center;
+
+    &__left {
+        width: 25%;
+        @media screen and (max-width: $bp-tabpc) {
+            width: 50%;
+        }
+        .logo {
+            margin-left: 40px;
+            @media screen and (max-width: $bp-tabpc) {
+                margin-left: 15px;
+            }
+            img {
+                width: 147px;
+            }
+        }
+    }
+
+    &__right {
+        width: 75%;
+        display: flex;
+        justify-content: flex-end;
+        @media screen and (max-width: $bp-tabpc) {
+            width: 50%;
+        }
+    }
+}

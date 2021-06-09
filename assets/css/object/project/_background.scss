@@ -1,0 +1,9 @@
+.p-base { 
+    position: relative;
+    background-image: url(../img/about/base-pc.jpg);
+    background-position: center bottom;
+    background-repeat: repeat;
+    @media screen and (max-width: $bp-sp) {
+        background-image: url(../img/about/base-sp.jpg);
+    }
+}

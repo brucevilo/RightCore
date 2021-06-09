@@ -1,0 +1,9 @@
+.u-pbt-120 {
+    padding: 120px 0;
+    @media screen and (max-width: $bp-tabpc) {
+        padding: 90px 0;
+    }
+    @media screen and (max-width: $bp-sp) {
+        padding: 60px 0;
+    }
+}
